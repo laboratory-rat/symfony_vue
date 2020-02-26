@@ -1,0 +1,44 @@
+.vform-box {
+    margin: 8px;
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid rgba(0, 0, 0, .17);
+    padding: 24px 60px;
+
+    .vform-input-box {
+        width: 100%;
+        text-align: center;
+
+        .vform-input-label {
+            display: block;
+            width: 100%;
+            color: rgba(0, 0, 0, .78);
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .vform-input-field {
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .17);
+            border-radius: 6px;
+            height: 32px;
+        }
+    }
+
+    .vform-box-next {
+        min-width: 80px;
+        background-color: red;
+        color: white;
+        border-radius: 4px;
+        height: 32px;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+
+        &.center {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}

@@ -1,13 +1,17 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import App from '../component/signup/signup.component.vue';
-import signupStore from '../store/signup.store';
+import VueFormWizard from 'vue-form-wizard';
+import SignupStore from '../store/signup.store';
+import s from "vue-form-wizard/dist/vue-form-wizard.min.css";
+
+console.log(s);
 
 Vue.use(Vuex);
-const store = new Vuex.Store(signupStore);
+Vue.use(VueFormWizard);
 
 new Vue({
     el: "#app",
     components: { App },
-    store
+    store: new Vuex.Store(SignupStore)
 });

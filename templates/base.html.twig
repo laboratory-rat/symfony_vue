@@ -6,10 +6,42 @@
 			{% block title %}Welcome!
 			{% endblock %}
 		</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		{{encore_entry_link_tags("template_css")}}
+		{{encore_entry_link_tags("wizard_css")}}
 		{% block stylesheets %}{% endblock %}
 	</head>
 	<body>
-		{% block body %}{% endblock %}
-		{% block javascripts %}{% endblock %}
-	</body>
-</html>
+		<header>
+			<div class="row">
+				<div class="logo">Vue integration mockup</div>
+				<span class="flex"></span>
+				<nav class="navigation">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/signin">Sign in</a></li>
+						<li><a href="/signup">Sign up</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="jimbo"></div>
+			<div class="main-container">
+				<aside>
+					<ul>
+						<li><a><span>Option 1</span></a></li>
+						<li><a><span>Option 2</span></a></li>
+						<li><a><span>Option 3</span></a></li>
+						<li><a><span>Option 4</span></a></li>
+						<li><a><span>Option 5</span></a></li>
+					</ul>
+				</aside>
+				<div class="page-content"> {% block body %}{% endblock %}
+					</div>
+				</div>
+			</main>
+
+			{% block javascripts %}{% endblock %}
+		</body>
+	</html>

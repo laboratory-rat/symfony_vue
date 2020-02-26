@@ -1,10 +1,12 @@
 <template>
   <div>
-    <h2>Signin app</h2>
+    <button @click="counter++">I am button {{counter}}</button>
   </div>
 </template>
 <script>
 export default {
-  data: () => ({})
+  data: () => ({
+    counter: 0
+  })
 };
 </script>

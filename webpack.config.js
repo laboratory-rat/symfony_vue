@@ -14,6 +14,9 @@ Encore
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
 
+    .addStyleEntry('template_css', ['./assets/css/template.css'])
+    .addStyleEntry('wizard_css', ['vue-form-wizard/dist/vue-form-wizard.min.css', './assets/css/vform.scss'])
+
     /*
      * ENTRY CONFIG
      *
@@ -57,7 +60,7 @@ Encore
     .enableVueLoader()
 
     // enables Sass/SCSS support
-    //.enableSassLoader()
+    .enableSassLoader()
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
@@ -72,6 +75,6 @@ Encore
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
     //.addEntry('admin', './assets/js/admin.js')
-;
+    ;
 
 module.exports = Encore.getWebpackConfig();
