@@ -1,6 +1,6 @@
 {
     "devDependencies": {
-        "@symfony/webpack-encore": "^0.28.2",
+        "@symfony/webpack-encore": "^4.2.0",
         "core-js": "^3.0.0",
         "regenerator-runtime": "^0.13.2",
         "webpack-notifier": "^1.6.0"
@@ -16,7 +16,7 @@
     "dependencies": {
         "rxjs": "^6.5.4",
         "vue": "^2.6.11",
-        "vue-loader": "^15.9.0",
+        "vue-loader": "^17.0.1",
         "vue-rx": "^6.2.0",
         "vue-template-compiler": "^2.6.11",
         "vuex": "^3.1.2"
